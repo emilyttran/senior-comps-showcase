@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Shadows+Into+Light|Allura" rel="stylesheet">
+</head>
+<body>
+
+<audio id="mozart_sample0" src="audio_mozart\\sample0.mp3"></audio>
+<audio id="mozart_sample100" src="audio_mozart\\sample100.mp3"></audio>
+<audio id="mozart_sample500" src="audio_mozart\\sample500.mp3"></audio>
+<audio id="mozart_sample1000" src="audio_mozart\\sample1000.mp3"></audio>
+<audio id="mozart_sample2000" src="audio_mozart\\sample2000.mp3"></audio>
+<audio id="mozart_sample3000" src="audio_mozart\\sample3000.mp3"></audio>
+<audio id="mozart_sample4000" src="audio_mozart\\sample4000.mp3"></audio>
+<audio id="mozart_sample5000" src="audio_mozart\\sample5000.mp3"></audio>
+<audio id="mozart_sample5500" src="audio_mozart\\sample5500.mp3"></audio>
+<audio id="mozart_sample7000" src="audio_mozart\\sample7000.mp3"></audio>
+<audio id="mozart_sample7500" src="audio_mozart\\sample7500.mp3"></audio>
+
+<audio id="mozart_sonatas_sample0" src="audio_mozart_sonatas\\sample0.mp3"></audio>
+<audio id="mozart_sonatas_sample100" src="audio_mozart_sonatas\\sample100.mp3"></audio>
+<audio id="mozart_sonatas_sample500" src="audio_mozart_sonatas\\sample500.mp3"></audio>
+<audio id="mozart_sonatas_sample700" src="audio_mozart_sonatas\\sample700.mp3"></audio>
+<audio id="mozart_sonatas_sample1000" src="audio_mozart_sonatas\\sample1000.mp3"></audio>
+<audio id="mozart_sonatas_sample1500" src="audio_mozart_sonatas\\sample1500.mp3"></audio>
+<audio id="mozart_sonatas_sample2500" src="audio_mozart_sonatas\\sample2500.mp3"></audio>
+
+
+
+<audio id="jazz_sample0" src="audio_jazz\\sample0.mp3"></audio>
+<audio id="jazz_sample100" src="audio_jazz\\sample100.mp3"></audio>
+<audio id="jazz_sample500" src="audio_jazz\\sample500.mp3"></audio>
+<audio id="jazz_sample700" src="audio_jazz\\sample700.mp3"></audio>
+<audio id="jazz_sample1000" src="audio_jazz\\sample1000.mp3"></audio>
+<audio id="jazz_sample1500" src="audio_jazz\\sample1500.mp3"></audio>
+<audio id="jazz_sample2500" src="audio_jazz\\sample2500.mp3"></audio>
+
+
+
+<div class="top">
+	<h1> My Outputs So Far (Hexahedria) </h1>
+	<h4> Each button contains a MIDI sample. The number of the button represents the number of EPOCHs that the neural network underwent when producing the MIDI samples. Can you hear a difference in the genres so far? </h4>
+
+	<div class="subtop">
+		<p> Click on the button to play the samples! <br> Press "S" to stop audio </p>
+	</div>
+</div>
+
+<hr>
+
+<div class="bigContainer">
+
+	<div class="container">
+		<h2> Trained on All Mozart Piano Compositions </h2>
+		<p> # of training data: 41 </p>
+
+		<button onclick="PlaySound('mozart_sample0')"> 0 </button>
+		<button onclick="PlaySound('mozart_sample100')"> 100 </button>
+		<button onclick="PlaySound('mozart_sample500')"> 500 </button>
+		<button onclick="PlaySound('mozart_sample1000')"> 1000 </button>
+		<button onclick="PlaySound('mozart_sample2000')"> 2000 </button>
+		<button onclick="PlaySound('mozart_sample3000')"> 3000 </button>
+		<button onclick="PlaySound('mozart_sample4000')"> 4000 </button>
+		<button onclick="PlaySound('mozart_sample5000')"> 5000 </button>
+		<button onclick="PlaySound('mozart_sample5500')"> 5500 </button>
+		<button onclick="PlaySound('mozart_sample7000')"> 7000 </button>
+		<button onclick="PlaySound('mozart_sample7500')"> 7500 </button>
+
+
+	</div>
+	<div class="container">
+
+		<h2> Trained on Only Mozart Piano Sonatas </h2>
+		<p> # of training data: 20 </p>
+
+		<button onclick="PlaySound('mozart_sonatas_sample0')"> 0 </button>
+		<button onclick="PlaySound('mozart_sonatas_sample100')"> 100 </button>
+		<button onclick="PlaySound('mozart_sonatas_sample500')"> 500 </button>
+		<button onclick="PlaySound('mozart_sonatas_sample700')"> 700 </button>
+		<button onclick="PlaySound('mozart_sonatas_sample1000')"> 1000 </button>
+		<button onclick="PlaySound('mozart_sonatas_sample1500')"> 1500 </button>
+		<button onclick="PlaySound('mozart_sonatas_sample2500')"> 2500 </button>
+
+
+	</div>
+	<div class="container">
+		<h2> Trained on Only Jazz Pieces (different styles) </h2>
+		<p> # of training data: 90 </p>
+
+		<button onclick="PlaySound('jazz_sample0')"> 0 </button>
+		<button onclick="PlaySound('jazz_sample100')"> 100 </button>
+		<button onclick="PlaySound('jazz_sample500')"> 500 </button>
+		<button onclick="PlaySound('jazz_sample700')"> 700 </button>
+		<button onclick="PlaySound('jazz_sample1000')"> 1000 </button>
+		<button onclick="PlaySound('jazz_sample1500')"> 1500 </button>
+		<button onclick="PlaySound('jazz_sample2500')"> 2500 </button>
+	</div>
+</div>
+
+<br><br><br><hr><br><br>
+
+<div class="question">
+	<h2> Sample 1 </h2>
+</div>
+
+<div class="footer">
+		<div id="name">Emily Thi Tran </div>
+</div>
+</body>
+	<script src="script.js"></script>
+</html>
